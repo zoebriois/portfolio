@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './CVPage.module.css';
 
 const CVPage: React.FC = () => {
-  const cvPdfUrl = "/CV.pdf";
+  const cvPdfUrl = `${process.env.PUBLIC_URL}/CV.pdf`;
 
   return (
     <div className={styles.cvPage}>

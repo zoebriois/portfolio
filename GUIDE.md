@@ -246,7 +246,7 @@ Modifiez `public/index.html` :
 
 ```html
 <title>Zoé Briois - Product Engineer</title>
-<meta name="description" content="Lead Tech Backend orientée produit. 5 ans d'expérience en architecture API et leadership technique.">
+<meta name="description" content="Lead Backend orientée produit. 5 ans d'expérience en architecture API et leadership technique.">
 ```
 
 ### Analytics (optionnel)

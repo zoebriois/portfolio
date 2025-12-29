@@ -23,7 +23,7 @@ const Header: React.FC = () => {
         <nav className={styles.nav}>
           <Link to="/" className={styles.logo}>
             <img
-              src="/profile-photo.jpg"
+              src={`${process.env.PUBLIC_URL}/profile-photo.jpg`}
               alt={PROFILE_INFO.name}
               className={styles.profilePhoto}
             />

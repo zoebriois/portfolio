@@ -17,7 +17,7 @@ export const CONTACT_INFO = {
 export const PROFILE_INFO = {
   name: 'Zoé Briois',
   title: 'Lead Développeuse Backend',
-  tagline: 'Backend Engineer · Lead Tech · Product-minded',
+  tagline: 'Lead Back · Tech manager · Product-minded',
   headline: 'Je conçois des systèmes backend pensés pour le produit et l\'impact.',
   experience: '5+ ans chez YPER · API & intégrations · Lead Tech depuis 2024 · Manager IT depuis 2025'
 };
