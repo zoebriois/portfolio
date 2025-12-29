@@ -1,0 +1,76 @@
+/* Variables CSS pour le design system */
+
+:root {
+  /* Couleurs principales */
+  --color-primary: #0F766E;          /* Accent principal (CTA, liens) */
+  --color-primary-dark: #115E59;     /* Hover / focus */
+  --color-primary-light: #5FB3A2;    /* Accent léger / badges */
+
+  /* Couleurs de fond */
+  --color-bg: #EEF2F7;               /* Fond principal */
+  --color-bg-secondary: #c3d2e6;     /* Cartes / sections */
+  --color-bg-tertiary: #F5F7FB;      /* Surfaces légères */
+
+  /* Couleurs de texte */
+  --color-text-primary: #1F2937;     /* Texte principal */
+  --color-text-secondary: #4B5563;   /* Texte secondaire */
+  --color-text-light: #6B7280;       /* Metadata / hints */
+
+  /* Bordures & séparateurs */
+  --color-border: #D1D9E6;
+
+  /* Couleurs sémantiques */
+  --color-success: #0F766E;          /* Aligné produit */
+  --color-warning: #D97706;          /* Plus doux que jaune vif */
+  --color-error: #DC2626;            /* Rouge sobre */
+
+  /* Typographie */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+
+  /* Tailles de police */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+  --text-5xl: 3rem;
+
+  /* Espacements */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  /* Alias pour compatibilité */
+  --color-accent: var(--color-primary);
+  --text-md: var(--text-base);
+
+  /* Largeurs */
+  --max-width-content: 1200px;
+  --max-width-text: 65ch;
+
+  /* Border radius */
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+
+  /* Ombres */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}

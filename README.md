@@ -1,70 +1,177 @@
-# Getting Started with Create React App
+# Portfolio - Zoé Briois
+## 🛠️ Stack technique
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- **React 19** avec **TypeScript**
+- **React Router** pour la navigation
+- **CSS Modules** pour le styling
+- **Create React App** comme base
 
-## Available Scripts
+### Pourquoi ces choix ?
 
-In the project directory, you can run:
+- **TypeScript** : Type safety, rigueur technique, maintenabilité
+- **CSS Modules** : Scoped CSS, pas de conflits de noms, simple et performant
+- **Pas de dépendances lourdes** : Code clair, bundle léger, performance optimale
 
-### `npm start`
+## 📁 Structure du projet
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```
+src/
+├── components/
+│   ├── common/          # Composants réutilisables (Header, Footer, Button, Card)
+│   └── sections/        # Sections de pages (Hero, About, Experience, Projects, Contact)
+├── pages/               # Pages principales (Home, AboutPage, ExperiencePage, ProjectsPage)
+├── data/                # Données du portfolio (experience.ts, projects.ts, about.ts)
+├── types/               # Types TypeScript
+├── styles/              # Styles globaux et variables CSS
+└── App.tsx              # Routing principal
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Installation et lancement
 
-### `npm test`
+### Prérequis
+- Node.js (v14 ou supérieur)
+- npm ou yarn
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation des dépendances
 
-### `npm run build`
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Lancement en développement
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Le site sera accessible sur [http://localhost:3000](http://localhost:3000)
 
-### `npm run eject`
+### Build de production
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm run build
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Le build sera disponible dans le dossier `build/`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Déploiement
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Le site est configuré pour se déployer automatiquement sur **GitHub Pages** via GitHub Actions.
 
-## Learn More
+#### Déploiement automatique (recommandé)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+À chaque push sur `main`, le workflow GitHub Actions :
+1. Build le projet
+2. Déploie automatiquement sur GitHub Pages
+3. Le site est accessible à : `https://zoebriois.github.io/portfolio`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Configuration requise** :
+- Aller dans `Settings` → `Pages` du repository
+- Sélectionner Source: `GitHub Actions`
 
-### Code Splitting
+Pour plus de détails, voir [DEPLOY.md](DEPLOY.md)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Autres plateformes
 
-### Analyzing the Bundle Size
+Le site peut aussi être déployé sur :
+- **Vercel** : `vercel --prod`
+- **Netlify** : Drag & drop du dossier `build/`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🎨 Design & UX
 
-### Making a Progressive Web App
+### Principes de design
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Sobre et professionnel** : Focus sur le contenu, pas sur les effets
+- **Lisibilité optimale** : Typographie claire, espacements généreux
+- **Responsive** : Optimisé mobile, tablette et desktop
+- **Performance** : Chargement rapide, bundle optimisé
 
-### Advanced Configuration
+### Couleurs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Primaire** : Vert produit (#10B981)
+- **Texte** : Gris très foncé (#111827)
+- **Secondaire** : Gris moyen (#6B7280)
+- **Fond** : Blanc cassé (#F9FAFB)
 
-### Deployment
+## 📄 Contenu
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Pages
 
-### `npm run build` fails to minify
+1. **Accueil** : Hero section avec pitch produit + CTA
+2. **À propos** : Valeurs, compétences, positionnement produit
+3. **Expérience** : Timeline des postes avec focus sur l'impact
+4. **Projets** : Études de cas au format Problème → Décisions → Impact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Données
+
+Toutes les données sont dans `src/data/` :
+- `experience.ts` : Expériences professionnelles
+- `projects.ts` : Projets / études de cas
+- `about.ts` : Informations "à propos", compétences, valeurs
+
+**Pour modifier le contenu** : Éditez ces fichiers TypeScript, les changements seront automatiquement reflétés.
+
+## 🔧 Personnalisation
+
+### Modifier les couleurs
+
+Éditez `src/styles/variables.css` :
+
+```css
+:root {
+  --color-primary: #10B981;      /* Vert produit */
+  --color-text-primary: #111827; /* Gris très foncé */
+  --color-bg: #F9FAFB;           /* Blanc cassé */
+  /* ... */
+}
+```
+
+### Ajouter une page
+
+1. Créez un composant dans `src/pages/`
+2. Ajoutez une route dans `src/App.tsx`
+3. Ajoutez un lien dans `src/components/common/Header.tsx`
+
+### Modifier les projets
+
+Éditez `src/data/projects.ts` et ajoutez/modifiez les objets dans le tableau `projects`.
+
+## 💡 Choix d'architecture
+
+### Pourquoi CSS Modules et pas Tailwind ?
+
+- ✅ Séparation claire HTML/CSS
+- ✅ Pas de classes ultra-longues dans le JSX
+- ✅ Plus facile à maintenir pour un projet de cette taille
+- ✅ Pas de config supplémentaire
+
+### Pourquoi TypeScript ?
+
+- ✅ Autocomplete et intellisense
+- ✅ Détection d'erreurs à la compilation
+- ✅ Meilleure maintenabilité
+- ✅ Montre la rigueur technique
+
+### Pourquoi pas de state management ?
+
+- Le portfolio est statique
+- Pas de données complexes à gérer
+- Pas besoin de Redux/Zustand/etc.
+- Simplicité = maintenabilité
+
+## 📝 Scripts disponibles
+
+- `npm start` : Lance le serveur de développement
+- `npm run build` : Build de production
+- `npm test` : Lance les tests (si configurés)
+- `npm run eject` : Éjecte la config CRA (⚠️ irréversible)
+
+## 🔗 Contact
+
+- **Email** : contact@zoebriois.dev
+- **LinkedIn** : [linkedin.com/in/zoe-briois](https://linkedin.com/in/zoe-briois)
+- **GitHub** : [github.com/zoebriois](https://github.com/zoebriois)
+
+---
+
+**Note** : Ce portfolio a été conçu pour mettre en avant un positionnement tech + produit. Chaque section répond à la question : "Pourquoi cette personne est pertinente pour un rôle orienté produit ?"

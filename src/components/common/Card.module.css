@@ -1,0 +1,40 @@
+.card {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.cardHeader {
+  margin-bottom: var(--space-sm);
+}
+
+.cardTitle {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+}
+
+.cardSubtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: 0;
+}
+
+.cardContent {
+  color: var(--color-text-primary);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.cardFooter {
+  margin-top: var(--space-md);
+  padding-top: 0;
+  border-top: none;
+}
+
+/* Variante clickable */
+.clickable {
+  cursor: pointer;
+}

@@ -1,0 +1,94 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-decoration: none;
+}
+
+.profilePhoto {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--color-border);
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--space-xl);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLink {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  transition: color var(--transition-fast);
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.navLink.active {
+  color: var(--color-primary);
+}
+
+/* Mobile menu */
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: var(--text-2xl);
+  cursor: pointer;
+  color: var(--color-text-primary);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+    flex-direction: column;
+    gap: 0;
+    padding: var(--space-md) 0;
+  }
+
+  .navLinks.mobileOpen {
+    display: flex;
+  }
+
+  .navLink {
+    padding: var(--space-md) var(--space-xl);
+    display: block;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+}

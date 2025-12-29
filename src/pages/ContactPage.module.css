@@ -1,0 +1,143 @@
+.contactPage {
+  padding: var(--space-2xl) 0;
+  min-height: 60vh;
+  background-color: white;
+}
+
+.header {
+  margin-bottom: var(--space-3xl);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding-left: 30px;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 2px;
+  background-color: var(--color-text-primary);
+}
+
+.title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.contactMethods {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: var(--space-3xl);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactCard {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md) 0;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.contactCard:last-child {
+  border-bottom: none;
+}
+
+.contactCard:hover {
+  padding-left: var(--space-sm);
+}
+
+.contactCard:hover .cardTitle {
+  color: var(--color-primary);
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon {
+  font-size: var(--text-xl);
+  color: var(--color-text-primary);
+}
+
+.cardTitle {
+  font-size: var(--text-base);
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text-primary);
+  transition: color var(--transition-fast);
+}
+
+.cardDescription {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+  line-height: 1.6;
+}
+
+.cardLink {
+  font-size: var(--text-xs);
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.availability {
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  padding: var(--space-lg);
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.availabilityText {
+  font-size: var(--text-base);
+  color: var(--color-bg);
+  margin: 0;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.availabilityText strong {
+  display: block;
+  color: var(--color-bg);
+  text-transform: uppercase;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-sm);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--text-xl);
+  }
+
+  .contactCard {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

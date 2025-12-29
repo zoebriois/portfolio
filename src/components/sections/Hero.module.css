@@ -1,0 +1,87 @@
+.hero {
+  padding: var(--space-3xl) 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.content {
+  max-width: 720px;
+}
+
+/* Petit texte d’introduction (kicker) */
+.kicker {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-accent);
+  margin-bottom: var(--space-lg);
+}
+
+/* Titre principal */
+.title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: var(--space-xl);
+  color: var(--color-text-primary);
+}
+
+/* Texte principal explicatif */
+.subtitle {
+  font-size: var(--text-lg);
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-2xl);
+}
+
+/* Zone des CTA */
+.cta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+  flex-wrap: wrap;
+}
+
+/* Lien secondaire (remplace le 2e bouton) */
+.secondaryLink {
+  font-size: var(--text-md);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.secondaryLink:hover {
+  color: var(--color-accent);
+}
+
+/* Ligne discrète de contexte (anciennement stats) */
+.footnote {
+  font-size: var(--text-sm);
+  color: var(--color-text-light);
+  margin-top: var(--space-xl);
+  max-width: 60ch;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-3xl) 0;
+  }
+
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: var(--text-md);
+  }
+
+  .cta {
+    gap: var(--space-md);
+  }
+}
