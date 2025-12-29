@@ -19,5 +19,6 @@ export const PROFILE_INFO = {
   title: 'Lead Développeuse Backend',
   tagline: 'Lead Back · Tech manager · Product-minded',
   headline: 'Je conçois des systèmes backend pensés pour le produit et l\'impact.',
-  experience: '5+ ans chez YPER · API & intégrations · Lead Tech depuis 2024 · Manager IT depuis 2025'
+  experience: '5+ ans chez YPER · API & intégrations · Lead Back depuis 2024 · Manager IT depuis 2025',
+  currentFocus: "Je suis ouverte à des échanges autour de postes alliant expertise technique, vision produit et sens de l'impact."
 };

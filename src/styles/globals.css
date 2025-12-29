@@ -19,6 +19,17 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Sticky footer layout */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App main {
+  flex: 1;
+}
+
 /* Typographie */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;

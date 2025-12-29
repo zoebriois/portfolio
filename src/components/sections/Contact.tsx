@@ -2,8 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { aboutData } from '../../data/about';
-import { CONTACT_INFO } from '../../data/constants';
+import { CONTACT_INFO, PROFILE_INFO } from '../../data/constants';
 import styles from './Contact.module.css';
 
 const Contact: React.FC = () => {
@@ -13,7 +12,7 @@ const Contact: React.FC = () => {
         <div className={styles.content}>
           <h2 className={styles.title}>À l'écoute d'opportunités produit/tech</h2>
           <p className={styles.subtitle}>
-            {aboutData.currentFocus}
+            {PROFILE_INFO.currentFocus}
           </p>
 
           <div className={styles.cta}>
