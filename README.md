@@ -168,10 +168,8 @@ Toutes les données sont dans `src/data/` :
 
 ## 🔗 Contact
 
-- **Email** : contact@zoebriois.dev
+- **Email** : zoe.briois.pro@gmail.com
 - **LinkedIn** : [linkedin.com/in/zoe-briois](https://linkedin.com/in/zoe-briois)
 - **GitHub** : [github.com/zoebriois](https://github.com/zoebriois)
 
 ---
-
-**Note** : Ce portfolio a été conçu pour mettre en avant un positionnement tech + produit. Chaque section répond à la question : "Pourquoi cette personne est pertinente pour un rôle orienté produit ?"
